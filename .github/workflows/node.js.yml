@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  UnitTest:
+  Unit tests:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout project
@@ -24,4 +24,5 @@ jobs:
       uses: test-summary/action@dist
       with:
         paths: results/**/*.xml
+        output: "results/summary.md"
       if: always()
