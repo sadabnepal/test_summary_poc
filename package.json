@@ -1,22 +1,14 @@
 {
   "name": "test_summary_poc",
   "version": "1.0.0",
-  "description": "",
+  "description": "test summary report poc",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter mocha-multi-reporters --reporter-options configFile=config.json ./test/*.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sadabnepal/test_summary_poc.git"
-  },
   "keywords": [],
   "author": "MD SADAB SAQIB",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sadabnepal/test_summary_poc/issues"
-  },
-  "homepage": "https://github.com/sadabnepal/test_summary_poc#readme",
   "dependencies": {},
   "devDependencies": {
     "chai": "^4.3.6",

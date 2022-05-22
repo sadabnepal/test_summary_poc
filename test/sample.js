@@ -12,8 +12,8 @@ describe('unit test', () => {
     })
 
     describe('fail tests', () => {
-        it('validate 10+10 is not equal to 30', () => {
-            expect(10 + 10).equal(30);
+        it('validate 20+10 is equal to 30', () => {
+            expect(20 + 10).equal(30);
         });
     })
 });
