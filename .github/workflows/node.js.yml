@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  Unit tests:
+  unit_tests:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout project
