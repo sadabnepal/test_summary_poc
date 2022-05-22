@@ -1,0 +1,27 @@
+name: Unit test CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  UnitTest:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout project
+      uses: actions/checkout@v3
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14.17.6
+        cache: 'npm'
+    - run: npm install
+    - run: npm run test
+    
+    - name: Create test summary
+      uses: test-summary/action@dist
+      with:
+        paths: results/**/*.xml
+        if: always()
